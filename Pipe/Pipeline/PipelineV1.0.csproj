@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01D13DDF-C2FE-4209-B574-911C39BF8D95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NorthStar.Pipeline</RootNamespace>
+    <AssemblyName>PipelineV1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>Resources\11.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bin\DevExpress.Data.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bin\DevExpress.Printing.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bin\DevExpress.Sparkline.v14.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bin\DevExpress.Utils.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bin\DevExpress.Xpo.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bin\DevExpress.XtraBars.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bin\DevExpress.XtraEditors.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SuperMap.Analyst.NetworkAnalyst">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.Analyst.NetworkAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.SpatialAnalyst">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.Analyst.SpatialAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.TrafficAnalyst">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.Analyst.TrafficAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data.Processing">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.Data.Processing.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Mapping">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Realspace">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.Realspace.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Realspace.NetworkAnalyst">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.Realspace.NetworkAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Realspace.SpatialAnalyst">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.Realspace.SpatialAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.UI.Controls">
+      <HintPath>F:\supermap\iobject\Bin\SuperMap.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaliberStatist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaliberStatist.Designer.cs">
+      <DependentUpon>CaliberStatist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Log\AOPFilters.cs" />
+    <Compile Include="Common\Base.cs" />
+    <Compile Include="Common\ProgressBar\FrmProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ProgressBar\FrmProgressBar.Designer.cs">
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Log\LogAspect.cs" />
+    <Compile Include="Common\Log\Logger.cs" />
+    <Compile Include="Common\ProgressBar\ProgressBar.cs" />
+    <Compile Include="Common\Utilities.cs" />
+    <Compile Include="InformationBubble.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationBubble.Designer.cs">
+      <DependentUpon>InformationBubble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationLabel.cs" />
+    <Compile Include="LengthStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LengthStatistics.Designer.cs">
+      <DependentUpon>LengthStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialStatist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialStatist.Designer.cs">
+      <DependentUpon>MaterialStatist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeasureAnalysis.cs" />
+    <Compile Include="AttributeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttributeQuery.Designer.cs">
+      <DependentUpon>AttributeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualEdit.cs" />
+    <Compile Include="OwnerStatist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerStatist.Designer.cs">
+      <DependentUpon>OwnerStatist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PathAnalysis.cs" />
+    <Compile Include="PipeNetworkAnalysis.cs" />
+    <Compile Include="PipeStatist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PipeStatist.Designer.cs">
+      <DependentUpon>PipeStatist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PureDistance.cs" />
+    <Compile Include="Query.cs" />
+    <Compile Include="QuickQuery.cs" />
+    <Compile Include="RodeExectionAnalysis.cs" />
+    <Compile Include="SectionAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionAnalysis.Designer.cs">
+      <DependentUpon>SectionAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpaceAnalysis.cs" />
+    <Compile Include="SQLQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQLQuery.designer.cs">
+      <DependentUpon>SQLQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseData.cs" />
+    <EmbeddedResource Include="AttributeQuery.resx">
+      <DependentUpon>AttributeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ProgressBar\FrmProgressBar.resx">
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaliberStatist.resx">
+      <DependentUpon>CaliberStatist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationBubble.resx">
+      <DependentUpon>InformationBubble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LengthStatistics.resx">
+      <DependentUpon>LengthStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialStatist.resx">
+      <DependentUpon>MaterialStatist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerStatist.resx">
+      <DependentUpon>OwnerStatist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PipeStatist.resx">
+      <DependentUpon>PipeStatist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SectionAnalysis.resx">
+      <DependentUpon>SectionAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLQuery.resx">
+      <DependentUpon>SQLQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Config\log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3pcircle.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curve.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freeline.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lineText.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapEntire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapPan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapRefresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapZoomFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapZoomIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parallel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parallelogram.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polyline.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\region.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roundedrectangle.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScenePan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneRefresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SceneViewEntire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertexadd.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertexedit.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SpatialAnalysis\" />
+    <Folder Include="Statistic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\11.ico" />
+    <Content Include="Resources\excavationregion_side.jpg" />
+    <Content Include="Resources\excavationregion_top.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

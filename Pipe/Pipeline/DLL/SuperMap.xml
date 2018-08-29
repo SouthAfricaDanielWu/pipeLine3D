@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="GB18030"?><ugc>
+<MapHardwareAccelerationEnable>false</MapHardwareAccelerationEnable>
+<IsShowShaderAtmosphere>true</IsShowShaderAtmosphere>
+<IsGraphicsAlphaEnable>true</IsGraphicsAlphaEnable>
+<AnalystMemorySize>0</AnalystMemorySize>
+<DTNameTablaNameSame>false</DTNameTablaNameSame>
+<DumpEnabled>true</DumpEnabled>
+<IsSceneAntialias>True</IsSceneAntialias>
+<WorkspaceCacheFolder>./Cache/Workspace/</WorkspaceCacheFolder>
+<Version>6.0</Version>
+<CustomGraphicsEnable>false</CustomGraphicsEnable>
+<ChangeCache_ByDelete>False</ChangeCache_ByDelete>
+<IsHighPrecisionMode>false</IsHighPrecisionMode>
+<IsImageClearer>false</IsImageClearer>
+<RasterPaint_IsTiled>true</RasterPaint_IsTiled>
+<CustomDPIX>96</CustomDPIX>
+<CustomDPIY>96</CustomDPIY>
+<RasterPrint_BlockSize>10</RasterPrint_BlockSize>
+<IsMapInflated>false</IsMapInflated>
+<EntirePercent>100</EntirePercent>
+<FontsPath>C:/Windows/Fonts/</FontsPath>
+<UseQtWhenDrawGraphicsMemLine>true</UseQtWhenDrawGraphicsMemLine>
+<SymbolDrawWithLineBrushColor>false</SymbolDrawWithLineBrushColor>
+<SqlServerMultiThread>true</SqlServerMultiThread>
+<SystemPath>./Resource</SystemPath>
+<CustomDPIEnable>TRUE</CustomDPIEnable>
+<UDBCreateRasterPro>false</UDBCreateRasterPro>
+<SceneAntialiasValue>8</SceneAntialiasValue>
+<MaxEditGeometrySize>10000</MaxEditGeometrySize>
+<CacheFileLocation>./Cache/DatasetCache/</CacheFileLocation>
+<DumpPath>./Dumps/</DumpPath>
+<MySQLEngineType>1</MySQLEngineType>
+<IsFreeTypeDrawTextOnWindows>false</IsFreeTypeDrawTextOnWindows>
+<OvertimeDownload>8</OvertimeDownload>
+<ImgBlockCacheSize>256</ImgBlockCacheSize>
+<LayoutOverlap>10</LayoutOverlap>
+<IsOpenCLComputingEnabled>false</IsOpenCLComputingEnabled>
+<FreeTypeLibPoolSize>5</FreeTypeLibPoolSize>
+<QPixmapEnable>false</QPixmapEnable>
+<WorldFilePath>C:/Windows/Fonts/</WorldFilePath>
+<DumpType>0x1826</DumpType>
+<UDBPagePackageSize>0</UDBPagePackageSize>
+<IsAutoAvoid_MapCache>true</IsAutoAvoid_MapCache>
+<OMPNumThreads>2</OMPNumThreads>
+<GraphicsType>1</GraphicsType>
+<OvertimeRefresh>500</OvertimeRefresh>
+<WebCacheFilePath>./Cache/WebCache/</WebCacheFilePath>
+<MySQLMaxConn>100</MySQLMaxConn>
+<PGSQLConnPoolSize>0</PGSQLConnPoolSize>
+<IsCUDAComputingEnabled>false</IsCUDAComputingEnabled>
+<ShowProgress>true</ShowProgress>
+<EPSFont type="external">EPSFont.xml</EPSFont>
+<GraphicsMemFonts type="external">GraphicsMemFonts.xml</GraphicsMemFonts>
+<PrjCode type="external">CodeTransition.xml</PrjCode>
+<resource type="external">resource.xml</resource>
+<Graphics3DDefaultFonts type="external">Graphics3DDefaultFonts.xml</Graphics3DDefaultFonts>
+<PrjConfig type="external">PrjConfig.xml</PrjConfig>
+<LogSetting type="object">
+<LogFormat>%DATETIME [%LEVEL] %MSG, ThreadID: %THREADID, Timespan(ms): %TIMESPAN, ResourceID: %RESID, SourceCode: %CODEFILE(%CODELINE)</LogFormat>
+<LogDBConnectionInfo/>
+<LogFileLocation>./log</LogFileLocation>
+<LogCountInMemory>10000</LogCountInMemory>
+<StorageType>Text</StorageType>
+<MaxFileSize> 1048576 </MaxFileSize>
+<LogEnabled>true</LogEnabled>
+<LogCountToDisk>1</LogCountToDisk>
+<LogPhysicalSave>true</LogPhysicalSave>
+<ExceedSizeMode>NewFile</ExceedSizeMode>
+<DateTimeFormat>%Y-%m-%d %H:%M:%S</DateTimeFormat>
+<LogFilePrefix>iObjects</LogFilePrefix>
+<IsFilter>false</IsFilter>
+<LogDBConnectDriver/>
+<IsAppend>true</IsAppend>
+<LogLevel>error</LogLevel>
+<OpLogLevel>Level0</OpLogLevel>
+<LogTimeInterval>Day</LogTimeInterval>
+</LogSetting>
+<MapProfilesSetting type="object">
+<IsEnabled>false</IsEnabled>
+<IsToFile>false</IsToFile>
+</MapProfilesSetting>
+</ugc>
